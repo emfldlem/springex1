@@ -18,6 +18,8 @@ public class PageMaker {
 	  public void setCri(Criteria cri) {
 	    this.cri = cri;
 	  }
+	  
+
 
 	  public void setTotalCount(int totalCount) {
 	    this.totalCount = totalCount;
@@ -78,5 +80,18 @@ public class PageMaker {
 
 	    return uriComponents.toUriString();
 	  }
+	  
+	  public String makeSearch(int page){
+		    
+		    UriComponents uriComponents =
+		              UriComponentsBuilder.newInstance()
+		              .queryParam("page", page)
+		              .queryParam("perPageNum", cri.getPerPageNum())
+		              .queryParam("searchType", ((SearchCriteria)cri).getSearchType())
+		              .queryParam("keyword", ((SearchCriteria)cri).getKeyword())
+		              .build();             
+		    
+		    return uriComponents.toUriString();
+		  } 
 	  
 }

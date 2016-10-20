@@ -319,8 +319,8 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/board/register"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="/board/listAll"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a href="/sboard/list"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+               
               </ul>
             </li>
             <li class="treeview">
